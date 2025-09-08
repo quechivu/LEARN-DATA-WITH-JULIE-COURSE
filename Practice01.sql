@@ -78,6 +78,22 @@ WHERE
 ORDER BY 
     author_id ASC
 
+-- EX 13
+SELECT part, assembly_step FROM parts_assembly
+WHERE finish_date IS NULL
+
+-- EX 14
+select * from lyft_drivers
+WHERE
+yearly_salary <= 30000 or yearly_salary >= 70000
+
+-- EX 15
+select * from uber_advertising
+where
+    money_spent > 100000 
+    and 
+    year = 2019
+
 
 
 
